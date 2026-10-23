@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nancy Chibwe Lemba · Administrative Assistant</title>
+<meta name="description" content="Nancy Chibwe Lemba, Lusaka-based administrative professional with over nine years of executive support, immigration and travel coordination experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: pill nav on top, editorial hero with an arch portrait, then a bento grid, a timeline and a closing contact panel. */
+:root{
+  --bg:#fbf5f2;          /* porcelain nude */
+  --surface:#ffffff;
+  --blush:#f5dedb;
+  --nude:#ecd8cb;
+  --sand:#dcc2b2;
+  --rose:#c27a82;        /* decorative rose */
+  --rose-ink:#9a4655;    /* rose for text and buttons, passes contrast */
+  --ink:#3a2b2c;         /* cocoa */
+  --muted:#7a6462;
+  --line:#ead9d2;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"DM Sans","Segoe UI",Roboto,Arial,sans-serif;
+  --radius:28px;
+  color-scheme:light;
+}
+/* dark palette: follows the device unless the visitor picked light; the switch sets data-theme */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#1f1718;--surface:#2a1f20;--blush:#3b2629;--nude:#3a2f2a;--sand:#4b3b34;--rose:#e3a3aa;--rose-ink:#f0b8be;--ink:#f6eae6;--muted:#c2aba6;--line:#3d2e2e;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#1f1718;--surface:#2a1f20;--blush:#3b2629;--nude:#3a2f2a;--sand:#4b3b34;--rose:#e3a3aa;--rose-ink:#f0b8be;--ink:#f6eae6;--muted:#c2aba6;--line:#3d2e2e;color-scheme:dark}
+body{transition:background-color .3s ease,color .3s ease}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{
+  margin:0;color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;
+  background-color:var(--bg);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.3 0 0 0 0 0.3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+a{color:var(--rose-ink)}
+:focus-visible{outline:2px solid var(--rose-ink);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:20px;padding-right:20px}
+
+/* nav */
+.nav{position:sticky;top:14px;z-index:5;margin-top:14px}
+.nav .wrap{display:flex;justify-content:center}
+.nav ul{list-style:none;margin:0;padding:6px;display:flex;gap:2px;flex-wrap:wrap;justify-content:center;
+  background:color-mix(in srgb,var(--surface) 82%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border:1px solid var(--line);border-radius:999px;box-shadow:0 8px 30px -18px rgba(90,40,45,.35)}
+.nav a{display:block;padding:8px 16px;border-radius:999px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+.nav a:hover{background:var(--blush)}
+
+/* hero */
+.hero{padding-block:72px 40px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:56px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-ink);margin:0 0 18px}
+.kicker::before{content:"";width:28px;height:1px;background:var(--rose)}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(48px,7.2vw,92px);line-height:.98;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 em{font-style:italic;color:var(--rose-ink)}
+.pitch{font-size:19px;max-width:46ch;margin:24px 0 0;color:var(--muted)}
+.pitch strong{color:var(--ink);font-weight:600}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.solid{background:var(--rose-ink);color:var(--bg)}
+.btn.soft{background:var(--blush);color:var(--ink)}
+.btn.line{border:1.5px solid var(--sand);color:var(--ink)}
+
+.portrait{position:relative;justify-self:center;width:min(360px,100%)}
+.arch{aspect-ratio:4/5;max-width:100%;border-radius:999px 999px var(--radius) var(--radius);
+  background:radial-gradient(120% 90% at 30% 15%,var(--blush) 0%,var(--nude) 55%,var(--sand) 100%);
+  display:grid;place-items:center;overflow:hidden;border:1px solid var(--line)}
+.arch span{font-family:var(--display);font-style:italic;font-weight:300;font-size:120px;color:var(--rose-ink);opacity:.85}
+.badge{position:absolute;left:-18px;bottom:28px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:14px 18px;box-shadow:0 18px 40px -24px rgba(90,40,45,.45)}
+.badge b{display:block;font-family:var(--display);font-weight:400;font-size:30px;line-height:1;color:var(--rose-ink)}
+.badge small{font-size:13px;color:var(--muted)}
+.tag-now{position:absolute;right:-10px;top:36px;background:var(--rose-ink);color:var(--bg);font-size:12px;font-weight:600;border-radius:999px;padding:7px 12px;letter-spacing:.02em}
+
+/* strip */
+.strip{padding-block:8px 24px}
+.strip ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.strip li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 16px;font-size:14px;color:var(--muted)}
+.strip li b{color:var(--ink);font-weight:600}
+
+section{padding-block:64px}
+.head{display:flex;flex-direction:column;gap:6px;margin-bottom:32px}
+.head p{margin:0;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-ink)}
+h2{font-family:var(--display);font-weight:300;font-size:clamp(34px,4.5vw,52px);line-height:1.05;letter-spacing:-.01em;margin:0}
+h2 em{font-style:italic;color:var(--rose-ink)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:48px;align-items:start}
+.about .big{font-family:var(--display);font-weight:300;font-size:clamp(24px,2.6vw,32px);line-height:1.3;margin:0 0 18px}
+.about .big em{color:var(--rose-ink)}
+.about .body p{margin:0 0 14px;color:var(--muted);max-width:60ch}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.tile{border-radius:var(--radius);padding:26px;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;gap:10px;min-width:0}
+.tile h3{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.15;margin:0}
+.tile p{margin:0;color:var(--muted);font-size:15px}
+.tile .n{font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--rose-ink)}
+.t1{grid-column:span 4;background:var(--blush);border-color:transparent}
+.t2{grid-column:span 2;background:var(--nude);border-color:transparent}
+.t3{grid-column:span 2}
+.t4{grid-column:span 2}
+.t5{grid-column:span 2;background:var(--blush);border-color:transparent}
+.t6{grid-column:span 6;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:24px;align-items:center;background:var(--nude);border-color:transparent}
+.t1 h3{font-size:30px}
+
+/* timeline */
+.jobs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.job{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;padding:28px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line)}
+.job.current{background:linear-gradient(135deg,var(--blush),var(--nude));border-color:transparent}
+.when{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.when .pill{display:inline-block;margin-top:8px;background:var(--rose-ink);color:var(--bg);font-size:12px;font-weight:600;border-radius:999px;padding:4px 10px}
+.job h3{font-family:var(--display);font-weight:400;font-size:24px;margin:0;line-height:1.2}
+.org{margin:4px 0 12px;color:var(--rose-ink);font-weight:500}
+.job ul{margin:0;padding-left:18px}
+.job li{margin-bottom:5px}
+.job li::marker{color:var(--rose)}
+
+/* education + skills */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.edu{display:flex;flex-direction:column;gap:14px}
+.edu div{border-left:3px solid var(--rose);padding:4px 0 4px 18px}
+.edu b{display:block;font-family:var(--display);font-weight:400;font-size:21px;line-height:1.25}
+.edu span{color:var(--muted);font-size:15px}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px}
+.tags li:nth-child(3n+1){background:var(--blush);border-color:transparent}
+.tags li:nth-child(3n+2){background:var(--nude);border-color:transparent}
+
+/* contact */
+.contact{border-radius:40px;padding:clamp(32px,6vw,72px);background:radial-gradient(120% 140% at 0% 0%,var(--blush) 0%,var(--nude) 60%,var(--sand) 130%);text-align:center}
+.contact h2{font-size:clamp(40px,6vw,72px)}
+.contact p{margin:16px auto 28px;max-width:52ch;color:var(--ink)}
+.contact .cta-row{justify-content:center;margin-top:0}
+.contact .btn.line{border-color:var(--rose-ink)}
+footer{padding-block:28px 40px;color:var(--muted);font-size:14px;text-align:center}
+
+@media (max-width:900px){
+  .hero{padding-top:48px}
+  .hero .wrap,.about,.two{grid-template-columns:minmax(0,1fr);gap:36px}
+  .portrait{order:-1;width:min(260px,80%)}
+  .badge{left:-8px}
+  .tag-now{right:-6px}
+  .bento{grid-template-columns:minmax(0,1fr)}
+  .t1,.t2,.t3,.t4,.t5,.t6{grid-column:auto}
+  .t6{grid-template-columns:minmax(0,1fr)}
+  .job{grid-template-columns:minmax(0,1fr);gap:8px;padding:22px}
+  section{padding-block:48px}
+}
+@media (max-width:520px){
+  .nav ul{padding:4px;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;justify-content:flex-start}
+  .nav ul::-webkit-scrollbar{display:none}
+  .nav a{padding:7px 10px;font-size:13px;white-space:nowrap}
+  .about{gap:8px}
+  .theme-toggle .lbl{display:none}
+}
+.theme-toggle{display:flex;align-items:center;gap:6px;border:0;background:var(--blush);color:var(--ink);font:inherit;font-size:14px;font-weight:500;padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.theme-toggle:hover{background:var(--nude)}
+.theme-toggle svg{width:16px;height:16px;flex:none}
+.theme-toggle.is-dark .moon,.theme-toggle:not(.is-dark) .sun{display:none}
+</style>
+<script>
+/* apply a saved choice before first paint so the page never flashes the wrong theme */
+(function(){try{var t=localStorage.getItem("nl-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <span class="lbl">Dark</span>
+      </button></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Administrative Assistant · Lusaka</p>
+      <h1>Nancy Chibwe <em>Lemba</em></h1>
+      <p class="pitch">I keep executive offices running smoothly, with <strong>over nine years</strong> of executive support, immigration and travel coordination at Hollard Life Assurance, ZTE and Samsung.</p>
+      <div class="cta-row">
+        <a class="btn solid" href="mailto:nancychibwe@gmail.com">Email Nancy</a>
+        <a class="btn soft" href="Nancy_Chibwe_Lemba_CV.pdf">Download CV</a>
+        <a class="btn line" href="tel:+260978316030">+260 978 316 030</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="arch" role="img" aria-label="Nancy Chibwe Lemba monogram"><span>NL</span></div>
+      <div class="badge"><b>9+ years</b><small>in administration</small></div>
+      <div class="tag-now">Now at Sterelin</div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <ul>
+      <li><b>Executive</b> support</li>
+      <li><b>Immigration</b> and work permits</li>
+      <li><b>Travel</b> and logistics</li>
+      <li><b>Records</b> and procurement</li>
+      <li><b>IT</b> diploma</li>
+    </ul>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="head"><p>About</p><h2>Calm, organised, <em>discreet</em></h2></div>
+    <div>
+      <p class="big">Currently Administrative Assistant at <em>Sterelin Medical and Diagnostics</em> in Lusaka.</p>
+      <div class="body">
+        <p>Over nine years I have supported chief executives and senior managers at Hollard Life Assurance, ZTE and Samsung. That work has covered their diaries, domestic and international travel, expatriate work permits and visas, procurement and confidential records.</p>
+        <p>A diploma in Information Systems and Programming and earlier IT support work mean I pick up new office systems quickly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="head"><p>Expertise</p><h2>Where I add <em>value</em></h2></div>
+    <div class="bento">
+      <div class="tile t1"><span class="n">01 · CORE</span><h3>Executive support</h3><p>Diary management and day-to-day support for the CEO and senior team. First point of contact for the executive office, with careful handling of confidential documents.</p></div>
+      <div class="tile t2"><span class="n">02</span><h3>Immigration and compliance</h3><p>Work permits, visas and renewals for expatriate staff, with Department of Immigration liaison.</p></div>
+      <div class="tile t3"><span class="n">03</span><h3>Travel and logistics</h3><p>Flights, accommodation, itineraries and protocol for visiting delegations.</p></div>
+      <div class="tile t4"><span class="n">04</span><h3>Office operations</h3><p>Procurement, office inventory, records systems and supervision of support staff.</p></div>
+      <div class="tile t5"><span class="n">05</span><h3>Data and reporting</h3><p>Consolidating nationwide reports and supporting payroll and incentive calculations.</p></div>
+      <div class="tile t6"><h3>IT-literate administration</h3><p>A diploma in Information Systems and Programming and hands-on IT support, covering data backups and network systems, so digital tools never slow the office down.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="head"><p>Experience</p><h2>Career <em>journey</em></h2></div>
+    <ol class="jobs">
+      <li class="job current">
+        <div class="when">Mar 2026 – Present<br><span class="pill">Current role</span></div>
+        <div><h3>Administrative Assistant</h3><p class="org">Sterelin Medical and Diagnostics Ltd, Lusaka</p>
+          <ul><li>Administrative support to management at a medical and diagnostics supply company.</li></ul></div>
+      </li>
+      <li class="job">
+        <div class="when">Feb 2020 – May 2024</div>
+        <div><h3>Administrative Assistant</h3><p class="org">Hollard Life Assurance Zambia Limited, Lusaka</p>
+          <ul>
+            <li>Day-to-day administrative and diary support to the CEO and senior management.</li>
+            <li>Planned domestic and international travel, accommodation and itineraries.</li>
+            <li>Supervised support staff and oversaw procurement and office inventory.</li>
+          </ul></div>
+      </li>
+      <li class="job">
+        <div class="when">Mar 2018 – Feb 2020</div>
+        <div><h3>Protocol and Administrative Officer</h3><p class="org">ZTE Zambia Limited, Lusaka</p>
+          <ul>
+            <li>Coordinated work permits, visas, renewals and immigration documents for expatriate staff.</li>
+            <li>Liaised with the Department of Immigration to keep approvals timely and compliant.</li>
+            <li>Supported management and visiting delegations with travel and protocol.</li>
+          </ul></div>
+      </li>
+      <li class="job">
+        <div class="when">Apr 2015 – Mar 2018</div>
+        <div><h3>Data Analyst and Administrative Officer</h3><p class="org">Samsung Electronics Zambia Limited, Lusaka</p>
+          <ul>
+            <li>Managed reporting systems and consolidated data from retail and field teams nationwide.</li>
+            <li>Supported payroll processing and staff incentive calculations.</li>
+          </ul></div>
+      </li>
+      <li class="job">
+        <div class="when">Feb 2014 – Apr 2015</div>
+        <div><h3>Information Technology Assistant</h3><p class="org">Apamwamba Investments Limited, Lusaka</p>
+          <ul><li>Maintained IT infrastructure, data backups and network systems.</li></ul></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap two">
+    <div>
+      <div class="head"><p>Education</p><h2>Qualifications</h2></div>
+      <div class="edu">
+        <div><b>Diploma in Information Systems and Programming</b><span>National Institute of Public Administration (NIPA), Lusaka · 2009</span></div>
+        <div><b>GCE School Certificate</b><span>Kabulonga Girls' Secondary School, Lusaka · 2006</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="head"><p>Skills</p><h2>Skills and <em>tools</em></h2></div>
+      <ul class="tags">
+        <li>Executive support</li><li>Diary management</li><li>Work permits and visas</li><li>Government liaison</li>
+        <li>Travel coordination</li><li>Records management</li><li>Procurement</li><li>Inventory control</li>
+        <li>Staff supervision</li><li>Confidentiality</li><li>Data reporting</li><li>Payroll support</li>
+        <li>Microsoft Word</li><li>Microsoft Excel</li><li>Microsoft PowerPoint</li><li>IT systems support</li>
+        <li>Class B driver's licence</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="head" style="align-items:center;margin-bottom:0"><p>Contact</p></div>
+      <h2>Let's work <em>together</em></h2>
+      <p>Get in touch about administrative, executive assistant and office coordination work in Lusaka. References are available on request.</p>
+      <div class="cta-row">
+        <a class="btn solid" href="mailto:nancychibwe@gmail.com">nancychibwe@gmail.com</a>
+        <a class="btn line" href="tel:+260978316030">+260 978 316 030</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Nancy Chibwe Lemba · Lusaka, Zambia</footer>
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById("theme-toggle");
+  var mq=window.matchMedia("(prefers-color-scheme: dark)");
+  function current(){return root.getAttribute("data-theme")||(mq.matches?"dark":"light");}
+  function render(){
+    var dark=current()==="dark";
+    btn.classList.toggle("is-dark",dark);
+    btn.setAttribute("aria-pressed",String(dark));
+    btn.setAttribute("aria-label",dark?"Switch to light mode":"Switch to dark mode");
+    btn.querySelector(".lbl").textContent=dark?"Light":"Dark";
+  }
+  btn.addEventListener("click",function(){
+    var next=current()==="dark"?"light":"dark";
+    root.setAttribute("data-theme",next);
+    try{localStorage.setItem("nl-theme",next);}catch(e){}
+    render();
+  });
+  if(mq.addEventListener){mq.addEventListener("change",render);}
+  render();
+})();
+</script>
+</body>
+</html>
