@@ -8,4 +8,4 @@ Portfolio and CV of Nancy Chibwe Lemba, Administrative Officer based in Lusaka, 
 
 Contact: nancychibwe@gmail.com · +260 978 316 030
 
-References are available on request.
+References with contact details are listed in the CV.
