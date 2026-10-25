@@ -1,6 +1,6 @@
 # Nancy Chibwe Lemba
 
-Portfolio and CV of Nancy Chibwe Lemba, Administrative Assistant based in Lusaka, Zambia.
+Portfolio and CV of Nancy Chibwe Lemba, Administrative Officer based in Lusaka, Zambia.
 
 - **Portfolio:** https://jojejr123.github.io/nancy-chibwe-lemba/
 - **CV (PDF):** [Nancy_Chibwe_Lemba_CV.pdf](Nancy_Chibwe_Lemba_CV.pdf)
